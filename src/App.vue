@@ -1,8 +1,10 @@
 <script>
 
 import count from './components/count.vue';
-import boo from './components/boo.vue'
-import TWDB from './components/TWDB.vue'
+import boo from './components/boo.vue';
+import TWDB from './components/TWDB.vue';
+// true == login false == register
+import userForm from './components/userForm.vue';
 export default{
     data(){
         return{
@@ -15,18 +17,19 @@ export default{
     components:{
         count,
         boo,
-        TWDB
+        TWDB,
+        userForm
     }
 }
 </script>
 
 <template>
-    <count :count=countNumber />
-    <boo :message=messageToComponent :isTrue=isFalse />
-    <TWDB :data=dataToBind />
+    <user-form :loginOrRegister="true" />
 </template>
 
 
 <style>
-
+#app{
+    height:100%;
+}
 </style>
