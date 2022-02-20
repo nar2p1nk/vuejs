@@ -1,4 +1,3 @@
-
 <script>
 export default {
     props:{loginOrRegister:Boolean}
@@ -21,6 +20,17 @@ export default {
 </template>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html,body{
+font-family: 'poppins',sans-serif;
+background-color: #1a1a1a;
+color: white;
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
 
 .app{
     display: flex;
